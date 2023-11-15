@@ -1,11 +1,8 @@
 const { Schema, model } = require('mongoose');
 
 const techSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  item: {type: String, required: true},
+  price: {type: Number, required: true},
 });
 
 const Tech = model('Tech', techSchema);

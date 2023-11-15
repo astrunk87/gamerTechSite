@@ -1,7 +1,8 @@
 const typeDefs = `
   type Tech {
     _id: ID!
-    name: String!
+    item: String!
+    price: Int
   }
 
   type Matchup {

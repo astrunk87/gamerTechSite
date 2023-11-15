@@ -1,35 +1,15 @@
 [
   {
-    "name": "JavaScript"
+    "item": "PlayStation 5",
+    "price": "500"
   },
   {
-    "name": "HTML"
+    "item": "Xbox Series X",
+    "price": "500"
   },
   {
-    "name": "CSS"
-  },
-  {
-    "name": "Node.js"
-  },
-  {
-    "name": "Express.js"
-  },
-  {
-    "name": "MySQL"
-  },
-  {
-    "name": "MongoDB"
-  },
-  {
-    "name": "React"
-  },
-  {
-    "name": "GraphQL"
-  },
-  {
-    "name": "Sequelize"
-  },
-  {
-    "name": "Handlebars.js"
+    "item": "Nintendo Switch OLED",
+    "price": "300"
   }
+ 
 ]

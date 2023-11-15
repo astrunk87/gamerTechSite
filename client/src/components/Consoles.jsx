@@ -3,9 +3,9 @@ import { useQuery } from '@apollo/client';
 import ConsolesList from '../components/pages/ConsolesList';
 import { QUERY_TECH } from '../utils/queries';
 
-const Home = () => {
+const Consoles = () => {
   const { loading, data } = useQuery(QUERY_TECH);
-  const tech = data?.tech || [];
+  const teches = data?.teches || [];
 
   return (
     <main>
@@ -15,7 +15,7 @@ const Home = () => {
             <div>Loading...</div>
           ) : (
             <ConsolesList
-              tech={tech}
+              teches={teches}
               title="consoles"
             />
           )}
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Consoles;

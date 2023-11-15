@@ -1,13 +1,13 @@
 import { useQuery, useMutation } from '@apollo/client';
 import { useParams, Link } from 'react-router-dom';
 import { CREATE_VOTE } from '../../utils/mutations';
-import { QUERY_MATCHUPS } from '../../utils/queries';
+// import { QUERY_MATCHUPS } from '../../utils/queries';
 import { QUERY_TECH } from '../../utils/queries';
 import { useNavigate } from 'react-router-dom';
 
 // import { Card } from "react-bootstrap";
 
-const ConsolesList = ({ tech, title }) => {
+const ConsolesList = ({ teches, title }) => {
   // if (!Consoles.length) {
   //   return <h3>No Consoles Yet</h3>;
   // }
@@ -15,24 +15,24 @@ const ConsolesList = ({ tech, title }) => {
   return (
     <div>
       <h3>{title}</h3>
-      {tech &&
-        tech.map((tech) => (
-          <div key={tech._id} className="card mb-3">
+      {teches &&
+        teches.map((teches) => (
+          <div key={teches._id} className="card mb-3">
             <h4 className="card-header bg-primary text-light p-2 m-0">
-              {tech.item} <br />
+              {teches.item} <br />
               <span style={{ fontSize: '1rem' }}>
-                console price is {tech.price}
+                console price is {teches.price}
               </span>
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{tech.item}</p>
+              <p>{teches.item}</p>
             </div>
-            <Link
+            {/* <Link
               className="btn btn-primary btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
               Join the discussion on this thought.
-            </Link>
+            </Link> */}
           </div>
         ))}
     </div>

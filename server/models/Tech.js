@@ -1,10 +1,10 @@
 const { Schema, model } = require('mongoose');
 
-const tech = new Schema({
+const techSchema = new Schema({
   item: {type: String, required: true},
-  price: Number,
+  price: {type: Number, required: true},
 });
 
-const Tech = model('Tech', tech);
+const Tech = model('Tech', techSchema);
 
 module.exports = Tech;

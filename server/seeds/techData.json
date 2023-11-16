@@ -1,7 +1,9 @@
 [
   {
     "item": "PlayStation 5",
-    "price": "500"
+    "price": "500",
+    "imgLoc": "../src/assets/playstation.jpg"
+    
   },
   {
     "item": "Xbox Series X",

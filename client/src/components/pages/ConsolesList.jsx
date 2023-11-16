@@ -26,13 +26,10 @@ const ConsolesList = ({ teches, title }) => {
             </h4>
             <div className="card-body bg-light p-2">
               <p>{teches.item}</p>
+              <img src={teches.imgLoc}></img>
+
             </div>
-            {/* <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/thoughts/${thought._id}`}
-            >
-              Join the discussion on this thought.
-            </Link> */}
+            
           </div>
         ))}
     </div>
@@ -40,36 +37,6 @@ const ConsolesList = ({ teches, title }) => {
 };
 
 export default ConsolesList;
-// const Consoles = () => {
-//   const { loading, data } = useQuery(QUERY_TECH);
 
-//   const techList = data?.tech || [];
-
-//   let navigate = useNavigate();
-
-//   if (loading) {
-//     return <div>Loading...</div>;
-//   }
-
-//   return ( 
-//   <div className="my-3 p-3 rounded"> (
-//     <div className="card bg-white card-rounded w-50">
-//       <div className="card-header bg-dark text-center">
-//         <h1>
-//          put console stuff here
-//         </h1>
-//         <p> {techList.map((tech)=> {
-//           return (
-//             <div key= {tech._id} value={tech.name}>{tech.name}{tech.price}</div>
-//           );
-//         })}
-//         </p>
-//       </div>
-//     </div>
-//     </div>
-//   );
-
-
-// };
 
 

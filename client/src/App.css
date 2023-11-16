@@ -1,3 +1,10 @@
+/* template for theme colors  */
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #28a745; /* Green */
+  --accent-color: #ffc107; /* Yellow */
+}
+
 .App {
   text-align: center;
 }

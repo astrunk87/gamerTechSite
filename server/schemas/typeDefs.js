@@ -4,6 +4,7 @@ const typeDefs = `
     item: String!
     price: Int
     imgLoc: String
+    reviews: String
   }
 
 

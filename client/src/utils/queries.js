@@ -6,6 +6,7 @@ export const QUERY_TECH = gql`
       _id
       item
       price
+      imgLoc
     }
   }
 `;

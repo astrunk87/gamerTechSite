@@ -36,6 +36,8 @@ const ConsolesList = ({ teches, title }) => {
   );
 };
 
+
+
 export default ConsolesList;
 
 

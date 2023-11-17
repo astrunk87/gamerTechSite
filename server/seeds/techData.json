@@ -15,7 +15,7 @@
   },
 
   {
-    "_id": "7",
+    "_id": "4",
     "name": "Nintendo SP Flame Red",
     "image": "/src/assets/Game-Boy-Advance-SP-Flame-Red.webp",
     "description": "Back In Stock - Our most popular color Flame Red",
@@ -25,5 +25,70 @@
     "countInStock": 0,
     "rating": 4,
     "numReviews": 4
+  },
+
+  {
+    "_id": "5",
+    "name": "Nintendo Game Boy Advance Glacier Color",
+    "image": "/src/assets/Nintendo-Game-Boy-Advance-Glacier.jpeg",
+    "description": "Back In Stock - Our most popular color Flame Red",
+    "brand": "Nintendo",
+    "category": "Electronics",
+    "price": 159.99,
+    "countInStock": 0,
+    "rating": 4,
+    "numReviews": 6
+  },
+
+  {
+    "_id": "6",
+    "name": "Nintendo 64 System",
+    "image": "/src/assets/Nintendo-64-System.jpeg",
+    "description": "Back For Limited Time - Our most popular Console Fans will love",
+    "brand": "Nintendo",
+    "category": "Electronics",
+    "price": 179.99,
+    "countInStock": 0,
+    "rating": 4,
+    "numReviews": 11
+  },
+
+  {
+    "_id": "7",
+    "name": "Sega Dreamcast Console",
+    "image": "/src/assets/Sega-Dreamcast-Console.jpg",
+    "description": "Back For Limited Time - Our most popular Console Fans will love this holiday",
+    "brand": "Sega",
+    "category": "Electronics",
+    "price": 199.99,
+    "countInStock": 0,
+    "rating": 3,
+    "numReviews": 24
+  },
+
+  {
+    "_id": "8",
+    "name": "Xbox Series X",
+    "image": "/src/assets/Xbox-Series-X.jpg",
+    "description": "Back For Limited Time - Our most popular Console Fans will love this holiday",
+    "brand": "Microsoft",
+    "category": "Electronics",
+    "price": 399.99,
+    "countInStock": 0,
+    "rating": 4,
+    "numReviews": 7
+  },
+
+  {
+    "_id": "9",
+    "name": "Steam Deck",
+    "image": "/src/assets/SteamDeck.webp",
+    "description": "Back For Holiday Season - Get Your Steamdeck to play on the road",
+    "brand": "Steam",
+    "category": "Electronics",
+    "price": 599.99,
+    "countInStock": 0,
+    "rating": 3.5,
+    "numReviews": 20
   }
 ]

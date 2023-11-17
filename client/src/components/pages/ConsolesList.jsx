@@ -25,8 +25,9 @@ const ConsolesList = ({ teches, title }) => {
               </span>
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{teches.item}</p>
               <img src={teches.imgLoc}></img>
+              <p>{teches.reviews}</p>
+
 
             </div>
             

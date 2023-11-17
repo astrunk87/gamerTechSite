@@ -1,16 +1,16 @@
 const typeDefs = `
   type Tech {
     _id: ID
-    item: String!
+    item: String
     price: Int
     imgLoc: String
-    reviews: String
+    reviews: [String]!
   }
 
 
   type Query {
-    teches: [Tech]!
-    tech(techId: ID): Tech
+    technologies: [Tech]!
+    tech(techId: ID!): Tech
   }
 
   

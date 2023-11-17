@@ -1,9 +1,9 @@
-const { Tech } = require('../models');
+const { Tech } = require("../models");
 
 const resolvers = {
   Query: {
-    teches: async () => {
-      return Tech.find({});
+    tech: async () => {
+      return Tech.find();
     },
     // tech: async (parent, { techId }) => {
     //   return Tech.findOne({ _id: techId });
@@ -26,6 +26,5 @@ const resolvers = {
 };
 
 module.exports = resolvers;
-
 
 // testing new branch

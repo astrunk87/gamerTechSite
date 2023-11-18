@@ -5,7 +5,7 @@ import { QUERY_TECH } from "../utils/queries";
 
 const Consoles = () => {
   const { loading, data } = useQuery(QUERY_TECH);
-  const tech = data?.tech || [];
+  const tech = data?.technologies || [];
 
   return (
     <main>

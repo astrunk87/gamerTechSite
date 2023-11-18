@@ -1,11 +1,11 @@
-import { useQuery } from '@apollo/client';
+import { useQuery } from "@apollo/client";
 
-import ConsolesList from '../components/pages/ConsolesList';
-import { QUERY_TECH } from '../utils/queries';
+import ConsolesList from "../components/pages/ConsolesList";
+import { QUERY_TECH } from "../utils/queries";
 
 const Consoles = () => {
   const { loading, data } = useQuery(QUERY_TECH);
-  const teches = data?.teches || [];
+  const tech = data?.tech || [];
 
   return (
     <main>
@@ -14,10 +14,7 @@ const Consoles = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ConsolesList
-              teches={teches}
-              title="consoles"
-            />
+            <ConsolesList tech={tech} title="testing" />
           )}
         </div>
       </div>

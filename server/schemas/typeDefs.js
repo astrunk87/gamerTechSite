@@ -13,6 +13,7 @@ const typeDefs = `
     
   }
   type Review {
+    _id: ID
     reviewText: String
   }
 

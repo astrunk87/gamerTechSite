@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 // import { Card } from "react-bootstrap";
 
 const ConsolesList = ({ tech, title }) => {
-  // if (!Consoles.length) {
-  //  return <h3>No Consoles Yet</h3>;
-  // }
+  if (!ConsolesList.length) {
+   return <h3>No Consoles Yet</h3>;
+  }
 
   return (
     <div>
@@ -27,7 +27,7 @@ const ConsolesList = ({ tech, title }) => {
             <div className="card-body bg-light p-2">
               <img src={tech.imgLoc}></img>
               <p>{tech.reviews}</p>
-              {/* <p>{tech.commentText}</p> */}
+              <p>{tech.commentText}</p>
             </div>
           </div>
         ))}

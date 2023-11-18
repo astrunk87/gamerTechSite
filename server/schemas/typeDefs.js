@@ -5,7 +5,7 @@ const typeDefs = `
     price: Int
     imgLoc: String
     reviews: String
-    comments: String
+    commentText: String
   }
   type Comment {
     _id: ID

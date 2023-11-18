@@ -27,7 +27,7 @@ const ConsolesList = ({ tech, title }) => {
             <div className="card-body bg-light p-2">
               <img src={tech.imgLoc}></img>
               <p>{tech.reviews}</p>
-              {/* <p>{tech.comments}</p> */}
+              {/* <p>{tech.commentText}</p> */}
             </div>
           </div>
         ))}

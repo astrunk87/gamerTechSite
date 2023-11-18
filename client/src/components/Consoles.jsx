@@ -14,7 +14,7 @@ const Consoles = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ConsolesList tech={tech} title="testing" />
+            <ConsolesList tech={tech} title="lorem" />
           )}
         </div>
       </div>

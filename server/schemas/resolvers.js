@@ -13,7 +13,7 @@ const resolvers = {
     addReview: async (parent, { techReview }) => {
       return Tech.create({ techReview });
     },
-    addComment: async (parent, { techId, commentText }) => {
+    addComment: async (parent, { techId, comment}) => {
       return Tech.findOneAndUpdate(
         { _id: techId },
         {

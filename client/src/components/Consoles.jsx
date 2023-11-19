@@ -5,7 +5,7 @@ import { QUERY_TECH } from "../utils/queries";
 
 const Consoles = () => {
   const { loading, data } = useQuery(QUERY_TECH);
-  const tech = data?.tech || [];
+  const tech = data?.technologies || [];
 
   return (
     <main>
@@ -14,7 +14,7 @@ const Consoles = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ConsolesList tech={tech} title="testing" />
+            <ConsolesList tech={tech} title="lorem" />
           )}
         </div>
       </div>

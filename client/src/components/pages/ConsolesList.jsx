@@ -1,16 +1,16 @@
 import { useQuery, useMutation } from "@apollo/client";
 import { useParams, Link } from "react-router-dom";
-import { CREATE_VOTE } from "../../utils/mutations";
-// import { QUERY_MATCHUPS } from '../../utils/queries';
+
 import { QUERY_TECH } from "../../utils/queries";
 import { useNavigate } from "react-router-dom";
+import ReviewForm from "../pages/Reviews";
 
 // import { Card } from "react-bootstrap";
 
 const ConsolesList = ({ tech, title }) => {
-  // if (!Consoles.length) {
-  //  return <h3>No Consoles Yet</h3>;
-  // }
+  if (!ConsolesList.length) {
+   return <h3>No Consoles Yet</h3>;
+  }
 
   return (
     <div>
@@ -25,8 +25,11 @@ const ConsolesList = ({ tech, title }) => {
               </span>
             </h4>
             <div className="card-body bg-light p-2">
-              <img src={tech.imgLoc}></img>
-              <p>{tech.reviews}</p>
+              <img className="img" src={tech.imgLoc}></img>
+              <p>Reviews:{tech.reviews}</p>
+              <p>Comments:{tech.commentText}</p>
+              <br></br>
+             < ReviewForm />
             </div>
           </div>
         ))}

@@ -15,10 +15,10 @@
 
   },
   {
-    "item": "Nintendo Game Boy Advanced in Glacier",
-    "price": "300",
-    "imgLoc": "../src/assets/Nintendo-Game-Boy-Advance-Glacier.jpeg",
-    "reviews": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum ",
-    "commentText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+    "item": "Xbox Series S",
+    "price": "400",
+    "imgLoc": "../src/assets/Xbox-Series-S.jpg",
+    "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
+    
   }
 ]

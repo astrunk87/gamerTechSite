@@ -5,7 +5,7 @@ const techData = require("./techData.json");
 
 db.once("open", async () => {
   try {
-  await cleanDB("Tech", "technologies");
+  await cleanDB("Tech", "teches");
 
   await Tech.create(techData);
 
@@ -15,3 +15,5 @@ db.once("open", async () => {
   throw err;
 }
 });
+
+// had helping find the collection name from prof Trey

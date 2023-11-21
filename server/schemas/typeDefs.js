@@ -15,13 +15,14 @@ const typeDefs = `
   
 
 
+
   type Query {
     technologies: [Tech]!
     tech(techId: ID!): Tech
    
   }
   type Mutation {
-    addReview(Review: String): Tech
+    addReview(reviews: String): Tech
     addComment(ReviewId: ID!, commentText: String!): Tech
     removeReview(ReviewId: ID!): Tech
     removeComment(ReviewId: ID!, commentId: ID!): Tech

@@ -11,9 +11,9 @@ import { gql } from '@apollo/client';
 // `;
 
 export const ADD_REVIEW = gql`
-  mutation addReview($TechId: ID!, $reviews: String!) {
-    addSkill(TechId: $TechId, reviews: $reviews) {
-      _id
+  mutation addReview($reviews: String!) {
+    addReview(Review: $reviews) {
+      
       reviews
     }
   }

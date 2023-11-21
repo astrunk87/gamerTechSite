@@ -1,8 +1,8 @@
 const { Schema, model } = require('mongoose');
 
 const techSchema = new Schema({
-  item: {type: String, required: true},
-  price: {type: Number, required: true},
+  item: {type: String, required: false},
+  price: {type: Number, required: false},
   imgLoc: {type: String, required: false},
   reviews: {type: String, required: false},
   commentText:{type: String, required: false }

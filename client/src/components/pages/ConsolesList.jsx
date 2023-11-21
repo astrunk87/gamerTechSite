@@ -7,39 +7,65 @@ import { useNavigate } from 'react-router-dom';
 
 // import { Card } from "react-bootstrap";
 
+// const ConsolesList = ({ teches, title }) => {
+//   // if (!Consoles.length) {
+//   //   return <h3>No Consoles Yet</h3>;
+//   // }
+
+//   return (
+//     <div>
+//       <h3>{title}</h3>
+//       {teches &&
+//         teches.map((teches) => (
+//           <div key={teches._id} className="card mb-3">
+//             <h4 className="card-header bg-primary text-light p-2 m-0">
+//               {teches.item} <br />
+//               <span style={{ fontSize: '1rem' }}>
+//                 console price is {teches.price}
+//               </span>
+//             </h4>
+//             <div className="card-body bg-light p-2">
+//               <img src={teches.imgLoc}></img>
+//               <p>{teches.reviews}</p>
+
+
+//             </div>
+            
+//           </div>
+//         ))}
+//     </div>
+//   );
+// };
+
+
+
+// export default ConsolesList;
+
+
 const ConsolesList = ({ teches, title }) => {
-  // if (!Consoles.length) {
-  //   return <h3>No Consoles Yet</h3>;
-  // }
+  if (!teches.length) {
+    return <h3>No Consoles Yet</h3>;
+  }
 
   return (
     <div>
       <h3>{title}</h3>
-      {teches &&
-        teches.map((teches) => (
-          <div key={teches._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
-              {teches.item} <br />
-              <span style={{ fontSize: '1rem' }}>
-                console price is {teches.price}
-              </span>
-            </h4>
-            <div className="card-body bg-light p-2">
-              <img src={teches.imgLoc}></img>
-              <p>{teches.reviews}</p>
-
-
-            </div>
-            
+      {teches.map((console) => (
+        <div key={console._id} className="card mb-3">
+          <h4 className="card-header bg-primary text-light p-2 m-0">
+            {console.item} <br />
+            <span style={{ fontSize: '1rem' }}>
+              Console price is {console.price}
+            </span>
+          </h4>
+          <div className="card-body bg-light p-2">
+            <img src={console.imgLoc} alt={console.item} style={{ maxWidth: '100%' }} />
+            <p>{console.reviews}</p>
           </div>
-        ))}
+        </div>
+      ))}
     </div>
   );
 };
 
-
-
 export default ConsolesList;
-
-
-

@@ -15,13 +15,13 @@
   },
 
   {
-    "_id": "4",
-    "name": "Nintendo SP Flame Red",
-    "image": "/src/assets/Game-Boy-Advance-SP-Flame-Red.webp",
+    
+    "item": "Nintendo SP Flame Red",
+    "imgLoc": "../src/assets/Nintendo-Game-Boy-Advance-SP-Flame-Red.webp",
     "description": "Back In Stock - Our most popular color Flame Red",
     "brand": "Nintendo",
     "category": "Electronics",
-    "price": 129.99,
+    "price": "129.99",
     "countInStock": 0,
     "rating": 4,
     "numReviews": 4

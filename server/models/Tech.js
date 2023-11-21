@@ -5,6 +5,7 @@ const techSchema = new Schema({
   price: {type: Number, required: true},
   imgLoc: {type: String, required: false},
   reviews: {type: String, required: false},
+  commentText:{type: String, required: false }
 });
 
 const Tech = model('Tech', techSchema);

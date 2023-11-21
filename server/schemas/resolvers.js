@@ -1,31 +1,43 @@
-const { Tech } = require('../models');
+const { Tech } = require("../models");
 
 const resolvers = {
   Query: {
-    teches: async () => {
-      return Tech.find({});
+    technologies: async () => {
+      return Tech.find();
     },
-    // tech: async (parent, { techId }) => {
-    //   return Tech.findOne({ _id: techId });
-    // },
+    tech: async (parent, { techId }) => {
+      return Tech.findOne({ _id: techId });
+    },
   },
-  // Mutation: {
-  //   createMatchup: async (parent, args) => {
-  //     const matchup = await Matchup.create(args);
-  //     return matchup;
-  //   },
-  //   createVote: async (parent, { _id, techNum }) => {
-  //     const vote = await Matchup.findOneAndUpdate(
-  //       { _id },
-  //       { $inc: { [`tech${techNum}_votes`]: 1 } },
-  //       { new: true }
-  //     );
-  //     return vote;
-  //   },
-  // },
+  Mutation: {
+    addReview: async (parent, { techReview }) => {
+      return Tech.create({ techReview });
+    },
+    addComment: async (parent, { techId, comment}) => {
+      return Tech.findOneAndUpdate(
+        { _id: techId },
+        {
+          $addToSet: { comments: { commentText } },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
+    },
+    removeReview: async (parent, { techId }) => {
+      return Thought.findOneAndDelete({ _id: techId });
+    },
+    removeComment: async (parent, { techId, commentId }) => {
+      return Tech.findOneAndUpdate(
+        { _id: techId },
+        { $pull: { comments: { _id: commentId } } },
+        { new: true }
+      );
+    },
+  },
 };
 
 module.exports = resolvers;
-
 
 // testing new branch

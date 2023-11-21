@@ -21,7 +21,7 @@ const Header = () => {
         <li><a href="#">
         <Link
               className="btn btn-primary btn-block btn-squared"
-              to={`/about`}>About</Link>
+              to={`/controllers`}>Controllers</Link>
           </a></li>
        
       </ul>

@@ -13,19 +13,7 @@ function Home() {
   return (
     <div>
       <Header />
-        {/* <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#"><Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/consoles`}
-            >
-              Consoles
-            </Link></a></li>
-        <li><a href="#">About</a></li>
-       
-      </ul>
-    </nav> */}
+     
      <h1>
           Welcome to Gamer Gear
         </h1>
@@ -33,12 +21,7 @@ function Home() {
           Where you can find the best reviews on the newest gamer tech.
         </p>
       <h1>Latest Products</h1>  
-      <Link
-              // className="btn btn-primary btn-block btn-squared"
-              to={`/consoles`}
-            >
-              consoles
-            </Link> 
+       
       </div>
      );
 }

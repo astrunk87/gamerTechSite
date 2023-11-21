@@ -18,7 +18,13 @@ function Home() {
         <p>
           Where you can find the best reviews on the newest gamer tech.
         </p>
-      <h1>Latest Products</h1>   
+      <h1>Latest Products</h1>  
+      <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/consoles`}
+            >
+              consoles
+            </Link> 
       </div>
      );
 }

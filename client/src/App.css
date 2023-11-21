@@ -1,3 +1,7 @@
+body {
+  margin: 20px; /* Adjust the value according to your design preferences */
+}
+
 /* template for theme colors  */
 :root {
   --primary-color: #007bff; /* Blue */
@@ -5,7 +9,7 @@
   --accent-color: #ffc107; /* Yellow */
 }
 
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -18,9 +22,9 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -29,28 +33,39 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
+} */
+/* 
 .App-link {
   color: #61dafb;
 }
-.img{
+/* .img{
   width: 150px
-}
-@keyframes App-logo-spin {
-  from {
+} */
+/* @keyframes App-logo-spin { */
+  /* from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}  */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .card {
+  flex: 0 0 calc(33.33% - 20px);
+  /* Adjust the width calculation based on the margin and number of cards you want per row */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
   border: 1px solid #ccc;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .card:hover {

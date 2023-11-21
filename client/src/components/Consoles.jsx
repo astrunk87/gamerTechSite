@@ -1,6 +1,7 @@
 import { useQuery } from "@apollo/client";
 
 import ConsolesList from "../components/pages/ConsolesList";
+import Reviews from "../components/pages/Reviews"
 import { QUERY_TECH } from "../utils/queries";
 
 const Consoles = () => {
@@ -16,6 +17,11 @@ const Consoles = () => {
           ) : (
             <ConsolesList tech={tech} title="lorem" />
           )}
+          {/* {loading ? (
+            <div>Loading...</div>
+          ) : (
+            <Reviews tech={tech} title="lorem" />
+          )} */}
         </div>
       </div>
     </main>

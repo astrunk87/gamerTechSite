@@ -6,41 +6,7 @@ import { useNavigate } from "react-router-dom";
 import ReviewForm from "../pages/Reviews";
 import React from 'react';
 
-// import { Card } from "react-bootstrap";
 
-// const ConsolesList = ({ teches, title }) => {
-//   // if (!Consoles.length) {
-//   //   return <h3>No Consoles Yet</h3>;
-//   // }
-
-//   return (
-//     <div>
-//       <h3>{title}</h3>
-//       {teches &&
-//         teches.map((teches) => (
-//           <div key={teches._id} className="card mb-3">
-//             <h4 className="card-header bg-primary text-light p-2 m-0">
-//               {teches.item} <br />
-//               <span style={{ fontSize: '1rem' }}>
-//                 console price is {teches.price}
-//               </span>
-//             </h4>
-//             <div className="card-body bg-light p-2">
-//               <img src={teches.imgLoc}></img>
-//               <p>{teches.reviews}</p>
-
-
-//             </div>
-            
-//           </div>
-//         ))}
-//     </div>
-//   );
-// };
-
-
-
-// export default ConsolesList;
 
 
 const ConsolesList = ({ tech, title }) => {
@@ -50,6 +16,12 @@ const ConsolesList = ({ tech, title }) => {
 
   return (
     <div className="container mt-4">
+      <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/`}
+            >
+              home
+            </Link> 
       <h3>{title}</h3>
       <div className="d-flex flex-wrap">
         {tech.map((console) => (

@@ -12,6 +12,12 @@ import { useQuery } from '@apollo/client';
 function Home() {
   return (
     <div>
+      <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/consoles`}
+            >
+              consoles
+            </Link>
      <h1>
           Welcome to Gamer Gear
         </h1>
@@ -19,12 +25,7 @@ function Home() {
           Where you can find the best reviews on the newest gamer tech.
         </p>
       <h1>Latest Products</h1>  
-      <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/consoles`}
-            >
-              consoles
-            </Link> 
+      
       </div>
      );
 }

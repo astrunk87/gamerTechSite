@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 
 import { QUERY_TECH } from "../../utils/queries";
 import { useNavigate } from "react-router-dom";
-import ReviewForm from "../pages/Reviews";
+import ReviewForm from "./ReviewForm";
 import React from 'react';
 
 
@@ -16,12 +16,6 @@ const ConsolesList = ({ tech, title }) => {
 
   return (
     <div className="container mt-4">
-      <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/`}
-            >
-              home
-            </Link> 
       <h3>{title}</h3>
       <div className="d-flex flex-wrap">
         {tech.map((console) => (

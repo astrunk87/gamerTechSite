@@ -1,6 +1,6 @@
 // import { Row, Col } from "react-bootstrap";
-import newProduct from "./NewProduct";
-
+import newProduct from "./pages/NewProduct";
+import Header from "../components/Header";
 import { Link } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 // import { QUERY_MATCHUPS } from '../../utils/queries';
@@ -12,7 +12,8 @@ import { useQuery } from '@apollo/client';
 function Home() {
   return (
     <div>
-        <nav>
+      <Header />
+        {/* <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#"><Link
@@ -24,7 +25,7 @@ function Home() {
         <li><a href="#">About</a></li>
        
       </ul>
-    </nav>
+    </nav> */}
      <h1>
           Welcome to Gamer Gear
         </h1>

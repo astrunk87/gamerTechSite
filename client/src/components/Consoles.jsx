@@ -1,8 +1,9 @@
 import { useQuery } from "@apollo/client";
 import { Link } from 'react-router-dom'; 
-import ConsolesList from "../components/pages/ConsolesList";
-import Reviews from "../components/pages/Reviews"
+import ConsolesList from "./pages/ConsolesList";
+import Reviews from "./pages/ReviewForm"
 import { QUERY_TECH } from "../utils/queries";
+import Header from "./Header";
 
 const Consoles = () => {
   const { loading, data } = useQuery(QUERY_TECH);
@@ -10,7 +11,8 @@ const Consoles = () => {
 
   return (
     <main>
-      <nav>
+      <Header />
+      {/* <nav>
       <ul>
         <li><a href="#">
         <Link
@@ -38,7 +40,7 @@ const Consoles = () => {
           </a></li>
        
       </ul>
-    </nav>
+    </nav> */}
       <div className="flex-row justify-center">
         <div className="col-12 col-md-8 mb-3">
           {loading ? (

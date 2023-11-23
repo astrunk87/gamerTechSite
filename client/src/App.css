@@ -1,10 +1,11 @@
-/*  */
+
+
 
 /* template for theme colors  */
 :root {
-  --primary-color: #007bff; /* Blue */
-  --secondary-color: #28a745; /* Green */
-  --accent-color: #ffc107; /* Yellow */
+  --primary-color: #4e5e70; 
+  --secondary-color: #6cce83;
+  --accent-color: #ffee07; 
 }
 
 /* "homepage" */
@@ -19,11 +20,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
 }
 
 nav {
   background-color: #007bff; /* Primary color */
   padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -41,6 +44,7 @@ a {
   text-decoration: none;
   color: #fff; /* Text color */
   font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
 
@@ -54,37 +58,44 @@ a {
 }
 
 .card {
-  flex: 0 0 calc(33.33% - 20px);
-  /* Adjust the width calculation based on the margin and number of cards you want per row */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  border: 1px solid #ccc;
+  flex: 0 0 calc(30% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px;
 }
 
 .card-body {
-  padding: 10px;
+  padding: 20px;
+  max-height: 200px; 
+  overflow-y: auto; 
+}
+
+.card-body {
+  padding: 20px;
 }
 
 .card-body p {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .card-body img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4 6px rgba(0, 0, 0, 0.1);
 }

@@ -11,7 +11,7 @@
 /* "homepage" */
 .btn-squared {
 border-radius: 0;
-background-color: #007bff;
+background-color: var(--primary-color);
 color: white;
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 nav {
-  background-color: #007bff; /* Primary color */
+  background-color: var(--primary-color); 
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

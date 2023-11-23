@@ -42,11 +42,11 @@ const Consoles = () => {
       </ul>
     </nav> */}
       <div className="flex-row justify-center">
-        <div className="col-12 col-md-8 mb-3">
+        <div className="">
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ConsolesList tech={tech} title="lorem" />
+            <ConsolesList tech={tech} title="Trending Consoles" />
           )}
           {/* {loading ? (
             <div>Loading...</div>

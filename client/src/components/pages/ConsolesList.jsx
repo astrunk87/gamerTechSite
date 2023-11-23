@@ -33,7 +33,7 @@ const ConsolesList = ({ tech, title }) => {
               </p>
               <p className="card-text">Reviews: {console.reviews}</p>
               <p className="card-text">Comments: {console.commentText}</p>
-              {/* Assuming ReviewForm is a component */}
+              {/* */}
               <ReviewForm />
             </div>
           </div>

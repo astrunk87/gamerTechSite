@@ -10,14 +10,14 @@ const resolvers = {
     },
   },
   Mutation: {
-    addReview: async (parent, { techReview }) => {
-      return Tech.create({ techReview });
-    },
-    addComment: async (parent, { techId, comment}) => {
+    // addReview: async (parent, { techReview }) => {
+    //   return Tech.create({ techReview });
+    // },
+    addReview: async (parent, { techId, review}) => {
       return Tech.findOneAndUpdate(
         { _id: techId },
         {
-          $addToSet: { comments: { commentText } },
+          $addToSet: { reviews: review },
         },
         {
           new: true,

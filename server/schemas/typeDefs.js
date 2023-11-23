@@ -4,28 +4,27 @@ const typeDefs = `
     item: String
     price: Int
     imgLoc: String
-    reviews: String
+    reviews: [String]!  
     commentText: String
-  }
-  type Comment {
-    _id: ID
-    commentText: String
-    
-  }
-  
+  } 
 
-
+  type Review{
+    review: String
+  }
 
   type Query {
     technologies: [Tech]!
     tech(techId: ID!): Tech
-   
+    reviews: [Review]!
   }
+
+  
   type Mutation {
-    addReview(reviews: String): Tech
+   
     addComment(ReviewId: ID!, commentText: String!): Tech
     removeReview(ReviewId: ID!): Tech
     removeComment(ReviewId: ID!, commentId: ID!): Tech
+    addReview(techId: ID!, review: String!): Tech
   }
 
   

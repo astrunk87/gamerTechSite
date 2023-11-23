@@ -2,18 +2,20 @@ import { useState } from 'react';
 import { useMutation } from '@apollo/client';
 
 import { ADD_REVIEW } from '../../utils/mutations';
+import { QUERY_TECH } from '../../utils/queries';
 
-const ReviewForm = ({tech, title}) => {
+const ReviewForm = ({techId, tech, title}) => {
   const [reviews, setReview] = useState('');
 
-  const [addReview, { error }] = useMutation(ADD_REVIEW);
+  const [addReview, { error }] = useMutation(ADD_REVIEW, {refetchQueries:[QUERY_TECH]});
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
     try {
+      console.log("test", techId, reviews)
       const { data } = await addReview({
-        variables: { reviews },
+        variables: { techId, review:reviews },
       });
 
       setReview('');
@@ -30,8 +32,8 @@ const ReviewForm = ({tech, title}) => {
         onSubmit={handleFormSubmit} >
         <div className="col-12 col-lg-9">
           <input
-            placeholder="Add your comment"
-            value={reviews}
+            placeholder="Add your Review"
+            value= {reviews}
             className="form-input w-100"
             onChange={(event) => setReview(event.target.value)}
           />
@@ -39,7 +41,7 @@ const ReviewForm = ({tech, title}) => {
 
         <div className="col-12 col-lg-3">
           <button className="btn btn-info btn-block py-3" type="submit">
-            Add Comment {title}
+            Add Review
           </button>
         </div>
         {error && (

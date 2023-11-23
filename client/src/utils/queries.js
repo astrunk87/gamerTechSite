@@ -7,7 +7,7 @@ export const QUERY_TECH = gql`
       item
       price
       imgLoc
-      reviews
+      reviews 
       commentText
     }
   }

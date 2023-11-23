@@ -12,41 +12,15 @@ const Consoles = () => {
   return (
     <main>
       <Header />
-      {/* <nav>
-      <ul>
-        <li><a href="#">
-        <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/`}
-            >
-              Home
-            </Link>
-            </a></li>
-        <li><a href="#">
-          <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/consoles`}
-            >
-              Consoles
-            </Link>
-            </a></li>
-        <li><a href="#">
-        <Link
-              className="btn btn-primary btn-block btn-squared"
-              to={`/about`}
-            >
-              About
-            </Link>
-          </a></li>
-       
-      </ul>
-    </nav> */}
+      
       <div className="flex-row justify-center">
         <div className="">
           {loading ? (
             <div>Loading...</div>
           ) : (
+
             <ConsolesList tech={tech} title="Trending Consoles" />
+
           )}
           {/* {loading ? (
             <div>Loading...</div>

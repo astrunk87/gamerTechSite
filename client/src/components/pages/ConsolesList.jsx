@@ -31,6 +31,7 @@ const itemsList = ({ tech, techId, title }) => {
               <p className="card-text">
                 <strong>Price:</strong> {item.price}
               </p>
+
               <p className="card-text">Reviews: </p>
               <ul>
               {item.reviews.map((review)=>{
@@ -42,6 +43,7 @@ const itemsList = ({ tech, techId, title }) => {
               {/* <p className="card-text">Comments: {item.commentText}</p> */}
               {/* Assuming ReviewForm is a component */}
               <ReviewForm techId={item._id} tech={tech} title="lorem"/>
+
             </div>
           </div>
         ))}

@@ -7,13 +7,13 @@
     "commentText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
   },
   {
-    "item": "Xbox Series S",
-    "price": "500",
-    "imgLoc": "../src/assets/Xbox-Series-S.jpg",
+    "item": "Steam Deck",
+    "price": "600",
+    "imgLoc": "../src/assets/SteamDeck.webp",
 
-  
-
-    "reviews": ["Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "],
+    "reviews": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  "
+    ],
 
     "commentText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
   },
@@ -21,21 +21,21 @@
     "item": "Xbox Series X",
     "price": "400",
     "imgLoc": "../src/assets/Xbox-Series-X.jpg",
-    "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
+    "reviews": "Lorem4"
   },
 
   {
     "item": "Xbox Series Controller Pulse Red",
     "price": "400",
     "imgLoc": "../src/assets/Xbox-Series-Controller-PulseRed.jpeg",
-    "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
+    "reviews": "Lorem2"
   },
 
   {
     "item": "Xbox Series Controller Carbon Black",
     "price": "400",
     "imgLoc": "../src/assets/Xbox-Series-Controller-CarbonBlack.jpeg",
-    "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
+    "reviews": "Lorem3"
   },
   {
     "item": "Nintendo 64",
@@ -57,9 +57,9 @@
   },
   {
     "item": "Playstation Wireless Headset",
-    "price": "400",
+    "price": "100",
     "imgLoc": "../src/assets/Playstation Wireless Headset.jpeg",
-    "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
+    "reviews": "Wireless headphones with long battery life."
   },
   {
     "item": "Xbox Series S",
@@ -73,6 +73,5 @@
     "imgLoc": "../src/assets/Xbox-Series-S.jpg",
 
     "reviews": "The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"
-
   }
 ]

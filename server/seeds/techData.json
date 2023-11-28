@@ -4,6 +4,7 @@
     "price": "500",
     "imgLoc": "../src/assets/playstation-5-Controller.jpg",
 
+
     "commentText": "Next Gen Console for you and the family"
   },
   {
@@ -14,6 +15,7 @@
     "reviews": ["Game your Steam games on the go."],
 
     "commentText": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum"
+
   },
   {
     "item": "Xbox Series X",
@@ -23,6 +25,8 @@
   },
 
   {
+
+
     "item": "Xbox Series Controller Pulse Red",
     "price": "400",
     "imgLoc": "../src/assets/Xbox-Series-Controller-PulseRed.jpeg",
@@ -36,6 +40,7 @@
     "reviews": "My favorite controller to use"
   },
   {
+
     "item": "Nintendo 64",
     "price": "100",
     "imgLoc": "../src/assets/Nintendo-64-System.jpeg",
@@ -45,11 +50,16 @@
     "item": "Sega Dreamcast",
     "price": "200",
     "imgLoc": "../src/assets/Sega-Dreamcast-Console.jpg",
+
+    
+
     "reviews": " This brings me back fun times fun console"
+
   },
   {
     "item": "Playstation 5 Spiderman Bundle",
     "price": "550",
+
     "imgLoc": "../src/assets/Playstation-5-SpidermanBundle.jpeg",
     "reviews": " Great starting bundle for first time buyer"
   },
@@ -71,5 +81,7 @@
     "imgLoc": "../src/assets/Nintendo-Game-Boy-Advance-Glacier.jpeg",
 
     "reviews": " This color is cool to me very unique"
+
   }
+
 ]

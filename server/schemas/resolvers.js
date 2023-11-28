@@ -27,22 +27,19 @@ const resolvers = {
     updateReview: async (parent,{ techId, review}) => {
       return await Tech.findOneAndUpdate(
         {_id: techId},
-        {review},
-        {
-          new: true,
-          runValidators: true,
-        }
+        {reviews: review},
+        {new: true}
 
       );
     },
    
     removeReview: async (parent, { techId, review }) => {
-      return Tech.findOneAndDelete(
+      return Tech.findOneAndUpdate(
         { _id: techId },
         { $pull: {reviews: review } },
         {
           new: true,
-          runValidators: true,
+        
         }
       );
     },

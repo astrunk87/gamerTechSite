@@ -21,7 +21,7 @@ const typeDefs = `
   
   type Mutation {
    
-     addReview(techId: ID!, review: String!): Tech
+    addReview(techId: ID!, review: String!): Tech
     removeReview(techId: ID!, review: String!): Tech
     updateReview(techId: ID!, review: String!): Tech
   }  

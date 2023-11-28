@@ -8,7 +8,7 @@ export const QUERY_TECH = gql`
       price
       imgLoc
       reviews 
-      commentText
+     
     }
   }
 `;

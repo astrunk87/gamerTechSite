@@ -3,9 +3,7 @@
     "item": "PlayStation 5",
     "price": "500",
     "imgLoc": "../src/assets/playstation-5-Controller.jpg",
-
-
-    "commentText": "Next Gen Console for you and the family"
+    "reviews": ["Next Gen Console for you and the family"]
   },
   {
     "item": "Steam Deck",

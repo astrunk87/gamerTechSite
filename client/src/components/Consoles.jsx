@@ -14,7 +14,7 @@ const Consoles = () => {
       <Header />
       
       <div className="flex-row justify-center">
-        <div className="">
+        <div className="background-color">
           {loading ? (
             <div>Loading...</div>
           ) : (

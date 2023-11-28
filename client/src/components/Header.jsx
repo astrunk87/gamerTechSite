@@ -5,12 +5,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className='ul-color'>
     <nav>
       <ul>
         <li><a href="#">
         <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="btn btn-primary bs-btn-color:red btn-block btn-squared"
               to={`/`}>Home</Link>
             </a></li>
         <li><a href="#">

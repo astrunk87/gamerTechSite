@@ -3,9 +3,13 @@
 
 /* template for theme colors  */
 :root {
-  --primary-color: #4e5e70; 
-  --secondary-color: #6cce83;
-  --accent-color: #ffee07; 
+  --primary-color: #2779a7; 
+  --secondary-color: #49c5b6;
+  --accent-color: #dF6C4F; 
+}
+
+.background-color {
+  background-color: var(--secondary-color);
 }
 
 /* "homepage" */
@@ -20,11 +24,16 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f8f8;
+  background-color: #dF6C4F;
+}
+
+.btn-btn-primary {
+  --bs-btn-color: var(--accent-color);
 }
 
 nav {
   background-color: var(--primary-color); 
+  margin-top: 20px;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -51,6 +60,7 @@ a {
 /* consoles */
 
 .container {
+  background-color: var(--accent-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -115,7 +125,9 @@ a {
 
 .review-item {
   margin-bottom: 8px; 
-  border: #ffee07;
   padding: 10px;
- background-color: #ffee07;
+ background-color: var(--secondary-color);
+}
+div.card.m-2 {
+  background-color: var(--primary-color);
 }

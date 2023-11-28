@@ -15,16 +15,16 @@ const itemsList = ({ tech, techId, title }) => {
   }
 
   return (
-    <div className="container mt-4">
+    <div className="container ">
       <h3>{title}</h3>
       <div className="d-flex flex-wrap">
         {tech.map((item) => (
-          <div key={item._id} className="card m-2" style={{ maxWidth: '14rem' }}>
+          <div key={item._id} className="card m-2" style={{ maxWidth: '' }}>
             <img
               src={item.imgLoc}
               alt={item.item}
-              className="card-img-top"
-              style={{ maxHeight: '10rem', objectFit: 'cover' }}
+              className="card-img"
+              style={{ maxHeight: '', maxWidth: '', objectFit: '' }}
             />
             <div className="card-body">
               <h5 className="card-title">{item.item}</h5>
@@ -32,16 +32,17 @@ const itemsList = ({ tech, techId, title }) => {
                 <strong>Price:</strong> {item.price}
               </p>
 
+              <div className="reviews">
               <p className="card-text">Reviews: </p>
-              <ul>
-              {item.reviews.map((review)=>{
-            
-                return(
-                <li>{review}</li>
-              )})}
-              </ul>
+              <ul className="reviews-list">
+             {item.reviews.map((review, index) => (
+                    <li className="review-item" key={index}>
+                      {review}
+                    </li>
+                  ))}
+                </ul>
+              </div>
               {/* <p className="card-text">Comments: {item.commentText}</p> */}
-              {/* Assuming ReviewForm is a component */}
               <ReviewForm techId={item._id} tech={tech} title="lorem"/>
 
             </div>

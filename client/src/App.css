@@ -53,12 +53,12 @@ a {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 20px;
 }
 
 .card {
-  flex: 0 0 calc(30% - 20px);
+  flex: 0 0 calc(100% - 40px);
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -93,9 +93,29 @@ a {
   margin-bottom: 1em;
 }
 
-.card-body img {
-  max-width: 100%;
-  height: auto;
+.card-img {
+  max-width: 200px;
+  height: 170px;
   border-radius: 8px;
   box-shadow: 0 4 6px rgba(0, 0, 0, 0.1);
+}
+
+/* .reviews {
+  margin-top: 10px;
+  
+} */
+
+.reviews-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+ 
+}
+
+.review-item {
+  margin-bottom: 8px; 
+  border: #ffee07;
+  padding: 10px;
+ background-color: #ffee07;
 }

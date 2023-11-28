@@ -1,79 +1,101 @@
+
+
+
 /* template for theme colors  */
 :root {
-  --primary-color: #007bff; /* Blue */
-  --secondary-color: #28a745; /* Green */
-  --accent-color: #ffc107; /* Yellow */
+  --primary-color: #4e5e70; 
+  --secondary-color: #6cce83;
+  --accent-color: #ffee07; 
 }
 
-.App {
-  text-align: center;
+/* "homepage" */
+.btn-squared {
+border-radius: 0;
+background-color: var(--primary-color);
+color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav {
+  background-color: var(--primary-color); 
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin-right: 15px;
 }
-.img{
-  width: 150px
+
+a {
+  text-decoration: none;
+  color: #fff; /* Text color */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+/* consoles */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .card {
-  border: 1px solid #ccc;
+  flex: 0 0 calc(30% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px;
 }
 
 .card-body {
-  padding: 10px;
+  padding: 20px;
+  max-height: 200px; 
+  overflow-y: auto; 
+}
+
+.card-body {
+  padding: 20px;
 }
 
 .card-body p {
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .card-body img {
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4 6px rgba(0, 0, 0, 0.1);
 }

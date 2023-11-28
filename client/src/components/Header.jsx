@@ -1,27 +1,31 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
-
+// import { Navbar, Nav, Container } from "react-bootstrap";
+// import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 import React from "react";
 
 const Header = () => {
   return (
     <header>
-      <Navbar bg="dark" varient="dark" expand="md" collapseOnSelect>
-        <Container>
-          <Navbar.Brand href="/">TechShop-v1</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link href="/cart">
-                <FaShoppingCart /> Cart
-              </Nav.Link>
-              <Nav.Link href="/login">
-                <FaUser /> Sign In
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+    <nav>
+      <ul>
+        <li><a href="#">
+        <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/`}>Home</Link>
+            </a></li>
+        <li><a href="#">
+          <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/consoles`}>Consoles</Link>
+            </a></li>
+        <li><a href="#">
+        <Link
+              className="btn btn-primary btn-block btn-squared"
+              to={`/controllers`}>Controllers</Link>
+          </a></li>
+       
+      </ul>
+    </nav>
     </header>
   );
 };

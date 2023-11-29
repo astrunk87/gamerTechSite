@@ -3,13 +3,17 @@
 
 /* template for theme colors  */
 :root {
-  --primary-color: #2779a7; 
-  --secondary-color: #49c5b6;
-  --accent-color: #dF6C4F; 
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #e74c3c; /* Red */
+  --accent-color: #f39c12; /* Yellow */
 }
 
 .background-color {
   background-color: var(--secondary-color);
+}
+
+html {
+  margin-top: 0%;
 }
 
 /* "homepage" */
@@ -21,14 +25,21 @@ color: white;
 
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #dF6C4F;
+  background-color: #ecf0f1; /* Light gray background */
+  color: #333; /* Dark text for better contrast */
+}
+
+.btn-squared,
+.btn-btn-primary {
+  border-radius: 0;
 }
 
 .btn-btn-primary {
   --bs-btn-color: var(--accent-color);
+  color: var(--secondary-color);
 }
 
 nav {

@@ -16,7 +16,7 @@ const Controllers = () => {
     <div className="card bg-white card-rounded w-50">
       <div className="card-header bg-dark text-center">
         <h1>
-         put in stuff for controllers here
+         Controller page coming soon!
         </h1>
       </div>
     </div>

@@ -20,7 +20,8 @@ function Home() {
         <p>
           Where you can find the best reviews on the newest gamer tech.
         </p>
-      <h1>Latest Products</h1>  
+      <h1>Latest Products</h1> 
+      <p>coming soon</p> 
        
       </div>
      );

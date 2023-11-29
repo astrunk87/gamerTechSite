@@ -3,7 +3,6 @@
 const newProduct = () => {
   return ( 
  
-    <div className="my-3 p-3 rounded"> 
     <div className="my-3 p-3 rounded">
       <div className="card bg-white card-rounded w-50">
         <div className="card-header bg-dark text-center">

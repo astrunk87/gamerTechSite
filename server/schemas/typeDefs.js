@@ -5,7 +5,7 @@ const typeDefs = `
     price: Int
     imgLoc: String
     reviews: [String]!  
-    commentText: String
+  
   } 
 
   type Review{
@@ -21,13 +21,10 @@ const typeDefs = `
   
   type Mutation {
    
-    addComment(ReviewId: ID!, commentText: String!): Tech
-    removeReview(ReviewId: ID!): Tech
-    removeComment(ReviewId: ID!, commentId: ID!): Tech
     addReview(techId: ID!, review: String!): Tech
-  }
-
-  
+    removeReview(techId: ID!, review: String!): Tech
+    updateReview(techId: ID!, review: String!): Tech
+  }  
 `;
 
 module.exports = typeDefs;

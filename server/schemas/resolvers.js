@@ -10,9 +10,7 @@ const resolvers = {
     },
   },
   Mutation: {
-    // addReview: async (parent, { techReview }) => {
-    //   return Tech.create({ techReview });
-    // },
+    
     addReview: async (parent, { techId, review}) => {
       return Tech.findOneAndUpdate(
         { _id: techId },
@@ -25,14 +23,24 @@ const resolvers = {
         }
       );
     },
-    removeReview: async (parent, { techId }) => {
-      return Thought.findOneAndDelete({ _id: techId });
+    
+    updateReview: async (parent,{ techId, review}) => {
+      return await Tech.findOneAndUpdate(
+        {_id: techId},
+        {reviews: review},
+        {new: true}
+
+      );
     },
-    removeComment: async (parent, { techId, commentId }) => {
+   
+    removeReview: async (parent, { techId, review }) => {
       return Tech.findOneAndUpdate(
         { _id: techId },
-        { $pull: { comments: { _id: commentId } } },
-        { new: true }
+        { $pull: {reviews: review } },
+        {
+          new: true,
+        
+        }
       );
     },
   },

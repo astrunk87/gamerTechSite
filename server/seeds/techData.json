@@ -1,35 +1,80 @@
 [
   {
-    "name": "JavaScript"
+    "item": "PlayStation 5",
+    "price": "500",
+    "imgLoc": "../src/assets/playstation-5-Controller.jpg",
+    "reviews": ["Next Gen Console for you and the family"]
   },
   {
-    "name": "HTML"
+    "item": "Steam Deck",
+    "price": "600",
+    "imgLoc": "../src/assets/SteamDeck.webp",
+
+    "reviews": ["Game your Steam games on the go."]
+
+    
   },
   {
-    "name": "CSS"
+    "item": "Xbox Series X",
+    "price": "400",
+    "imgLoc": "../src/assets/Xbox-Series-X.jpg",
+    "reviews": ["Microsoft Next Gen Console is great"]
+  },
+
+  {
+
+
+    "item": "Xbox Series Controller Pulse Red",
+    "price": "400",
+    "imgLoc": "../src/assets/Xbox-Series-Controller-PulseRed.jpeg",
+    "reviews": ["I chose this controller color cause red is my favorite color"]
+  },
+
+  {
+    "item": "Xbox Series Controller Carbon Black",
+    "price": "400",
+    "imgLoc": "../src/assets/Xbox-Series-Controller-CarbonBlack.jpeg",
+    "reviews": ["My favorite controller to use"]
   },
   {
-    "name": "Node.js"
+
+    "item": "Nintendo 64",
+    "price": "100",
+    "imgLoc": "../src/assets/Nintendo-64-System.jpeg",
+    "reviews": ["The N64 as a more affordable console from your an amazing era."]
   },
   {
-    "name": "Express.js"
+    "item": "Sega Dreamcast",
+    "price": "200",
+    "imgLoc": "../src/assets/Sega-Dreamcast-Console.jpg", 
+    "reviews": [" This brings me back fun times fun console"]
+
   },
   {
-    "name": "MySQL"
+    "item": "Playstation 5 Spiderman Bundle",
+    "price": "550",
+
+    "imgLoc": "../src/assets/Playstation-5-SpidermanBundle.jpeg",
+    "reviews": [" Great starting bundle for first time buyer"]
   },
   {
-    "name": "MongoDB"
+    "item": "Playstation Wireless Headset",
+    "price": "100",
+    "imgLoc": "../src/assets/Playstation Wireless Headset.jpeg",
+    "reviews": ["Wireless headphones with long battery life."]
   },
   {
-    "name": "React"
+    "item": "Xbox Series S",
+    "price": "400",
+    "imgLoc": "../src/assets/Xbox-Series-S.jpg",
+    "reviews": ["The Xbox Series S as a more affordable, scaled back version of the Series X, with half the storage and graphical power and lacking an optical drive. However, it retains the capability to play all the same games as the Series X and boasts fast load times"]
   },
   {
-    "name": "GraphQL"
-  },
-  {
-    "name": "Sequelize"
-  },
-  {
-    "name": "Handlebars.js"
+    "item": "Nintendo Game Boy Advance Glacier",
+    "price": "50",
+    "imgLoc": "../src/assets/Nintendo-Game-Boy-Advance-Glacier.jpeg",
+    "reviews": ["This color is cool to me very unique"]
+
   }
+
 ]

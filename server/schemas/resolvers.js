@@ -1,29 +1,51 @@
-const { Tech, Matchup } = require('../models');
+const { Tech } = require("../models");
 
 const resolvers = {
   Query: {
-    tech: async () => {
-      return Tech.find({});
+    technologies: async () => {
+      return Tech.find();
     },
-    matchups: async (parent, { _id }) => {
-      const params = _id ? { _id } : {};
-      return Matchup.find(params);
+    tech: async (parent, { techId }) => {
+      return Tech.findOne({ _id: techId });
     },
   },
   Mutation: {
-    createMatchup: async (parent, args) => {
-      const matchup = await Matchup.create(args);
-      return matchup;
-    },
-    createVote: async (parent, { _id, techNum }) => {
-      const vote = await Matchup.findOneAndUpdate(
-        { _id },
-        { $inc: { [`tech${techNum}_votes`]: 1 } },
-        { new: true }
+    
+    addReview: async (parent, { techId, review}) => {
+      return Tech.findOneAndUpdate(
+        { _id: techId },
+        {
+          $addToSet: { reviews: review },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
       );
-      return vote;
+    },
+    
+    updateReview: async (parent,{ techId, review}) => {
+      return await Tech.findOneAndUpdate(
+        {_id: techId},
+        {reviews: review},
+        {new: true}
+
+      );
+    },
+   
+    removeReview: async (parent, { techId, review }) => {
+      return Tech.findOneAndUpdate(
+        { _id: techId },
+        { $pull: {reviews: review } },
+        {
+          new: true,
+        
+        }
+      );
     },
   },
 };
 
 module.exports = resolvers;
+
+// testing new branch

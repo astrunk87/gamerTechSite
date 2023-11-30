@@ -26,7 +26,11 @@ function Home() {
       <br></br>
       <h1>Coming Soon</h1> 
        
-      </div>
+      <footer>
+        <p>&copy; 2023 Gamer Gear. All rights reserved.</p>
+      </footer>
+    </div>
+      
      );
 }
 

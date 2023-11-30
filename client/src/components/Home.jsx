@@ -11,17 +11,15 @@ import React from 'react';
  
 function Home() {
   return (
-    <div class="homepage">
+    <div>
       <Header />
      
      <h1>
           Welcome to Gamer Gear
         </h1>
-        <br></br>
-        <h3>
+        <p>
           Where you can find the best reviews on the newest gamer tech.
-        </h3>
-        <br></br>
+        </p>
       <h1>Latest Products</h1> 
       <br></br>
       <h1>Coming Soon</h1> 

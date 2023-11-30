@@ -17,7 +17,7 @@ const itemsList = ({ tech, techId, title }) => {
   return (
     <div className="container ">
       <h3>{title}</h3>
-      <div className="d-flex flex-wrap">
+      <div className=" flex-wrap">
         {tech.map((item) => (
           <div key={item._id} className="card m-2" style={{ maxWidth: '' }}>
             <img

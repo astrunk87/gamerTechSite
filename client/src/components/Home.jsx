@@ -27,7 +27,11 @@ function Home() {
         <p>&copy; 2023 Gamer Gear. All rights reserved.</p>
       </footer>
        
-      </div>
+      <footer>
+        <p>&copy; 2023 Gamer Gear. All rights reserved.</p>
+      </footer>
+    </div>
+      
      );
 }
 

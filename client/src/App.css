@@ -15,6 +15,40 @@
 html {
   margin-top: 0%;
 }
+/* "homepage" */
+.btn-squared {
+  border-radius: 0;
+  background-color: var(--primary-color);
+  color: white;
+  }
+  .homepage h3 {
+  
+    color: #3498db;
+  
+  }
+  
+  .homepage {
+    background-color: #ecf0f1;
+    color: #333; 
+    padding: 20px; 
+    text-align: center;
+  }
+  
+  .homepage h1 {
+    color: #3498db; 
+  }
+  
+  
+  .homepage a {
+    color: #ecf0f1; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .homepage a:hover {
+    color: #c0392b; 
+  }
 
 /* "homepage" */
 .btn-squared {

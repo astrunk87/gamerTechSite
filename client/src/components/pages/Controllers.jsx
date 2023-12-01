@@ -13,8 +13,8 @@ const Controllers = () => {
     <div>
 
     <Header />
-    <div className="card bg-white card-rounded w-50">
-      <div className="card-header bg-dark text-center">
+    <div className="homepage">
+      <div className="homepage">
         <h1>
          Controller page coming soon!
         </h1>

@@ -22,6 +22,7 @@
 
 ## usage
   Once on the site you can add a review from the site under the console you wish to review. You can also open the Apollo client to edit the data. From Apollo you can update, delete and add reviews on consoles.
+![Gamer Gear consoles page](https://github.com/astrunk87/gamerTechSite/assets/134554632/cfb8d2fe-e2dd-4f6a-b386-11f1679c9403)
 
 ## License
   Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license 

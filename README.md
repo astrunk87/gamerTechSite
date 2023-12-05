@@ -37,9 +37,8 @@
 ## Questions
   If you have questions please direct them to this email address:
   astrunk87@gmail.com
-  
+  yankeefan1246@gmail.com
 ## Github link
   Check out my github!
    https://github.com/astrunk87    
-  
-
+   https://github.com/Glidingdiplomat
